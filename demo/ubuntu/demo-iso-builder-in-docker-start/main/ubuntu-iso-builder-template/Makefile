@@ -10,24 +10,9 @@ help:
 	@echo '	$$ make'
 	@echo '	$$ make help'
 	@echo
-	@echo '	$$ make box-build'
-	@echo '	$$ make box-run'
-	@echo
 	@echo '	$$ make master-build'
 	@echo
 .PHONY: help
-
-
-
-
-box-build:
-	./box-build.sh
-.PHONY: box-build
-
-
-box-run:
-	./box-run.sh
-.PHONY: box-run
 
 
 master-build:
