@@ -47,6 +47,18 @@ REF_DES_DIST_DIR_PATH="${REF_PORT_DIR_PATH}/dist"
 
 
 ##
+## ## Env
+##
+
+echo
+echo "export DEBIAN_FRONTEND=noninteractive"
+export DEBIAN_FRONTEND=noninteractive
+echo
+
+
+
+
+##
 ## ## Model / Module
 ##
 
@@ -61,6 +73,8 @@ mod_build_prepare_package () {
 	sudo apt-get update
 
 	sudo apt-get install debootstrap -y
+
+	sudo apt-get install make git wget curl -y
 
 }
 
