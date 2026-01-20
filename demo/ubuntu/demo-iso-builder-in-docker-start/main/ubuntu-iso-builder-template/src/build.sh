@@ -72,7 +72,7 @@ mod_build_prepare_package () {
 
 	apt-get update
 
-	apt-get install debootstrap -y
+	apt-get install systemctl sudo debootstrap -y
 
 	apt-get install make git wget curl -y
 
